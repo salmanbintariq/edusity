@@ -1,10 +1,11 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+import menuIcon from '../assets/menu-icon.png'
 
 const Navbar = () => {
   return (
     <nav className='px-4 sm:px-12 lg:px-24 xl:px-40 py-2 flex justify-between items-center text-white fixed w-full top-0 z-20'>
       <img src={logo} className='w-32 sm:w-40' alt="" />
-      <ul className='flex items-center gap-7 text-sm transition-all'>
+      <ul className='hidden md:flex items-center gap-7 text-sm transition-all'>
         <li><a href="#" className='sm:hover:border-b'>Home</a></li>
         <li><a href="#program" className='sm:hover:border-b'>Program</a></li>
         <li><a href="#about-us" className='sm:hover:border-b'>About us</a></li>
@@ -16,6 +17,9 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
+
+      {/* Mobile Menu icon */}
+      <img src={menuIcon} className='w-7 md:hidden cursor-pointer' alt="" />
     </nav>
   )
 }
