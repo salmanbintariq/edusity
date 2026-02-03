@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7))]" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-6">
+      <div className="relative z-10 flex flex-col items-center gap-5">
         <h1 className="max-w-4xl text-3xl sm:text-4xl md:text-6xl font-extrabold leading-16">
           We Ensure better education <br /> for a better world
         </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
           skills, and experiences needed to excel in the modern world.
         </p>
 
-        <button className="bg-white text-[#212121] flex items-center gap-2 px-6 py-2.5 rounded-full cursor-pointer hover:scale-105 transition-transform">
+        <button className="bg-white text-[#212121] text-sm flex items-center gap-2 px-6 py-2.5 rounded-full cursor-pointer hover:scale-105 transition-transform">
           Explore More
           <img src={darkArrow} width={16} alt="arrow" />
         </button>

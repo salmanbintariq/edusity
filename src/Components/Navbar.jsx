@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className='px-4 sm:px-12 lg:px-24 xl:px-40 py-2 flex justify-between items-center text-white fixed w-full top-0 z-50'>
+    <nav className='px-4 sm:px-12 lg:px-24 xl:px-40 py-3 flex justify-between items-center text-white fixed w-full top-0 z-50'>
       <img src={logo} className='w-32 sm:w-40' alt="nav-logo" />
 
       {/* Mobile Sidebar */}
