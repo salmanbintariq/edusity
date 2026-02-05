@@ -1,11 +1,13 @@
+import About from "./Components/About";
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import Program from "./Components/Program"
 import Title from "./Components/Title"
 
+
 const App = () => {
   return (
-    <div className="min-h-screen">
+    <div className="relative">
       <Navbar />
       <Hero />
 
@@ -14,8 +16,10 @@ const App = () => {
           <Title subTitle="OUR PROGRAM" title="What We Offer" />
           <Program />
         </section>
-        
-        {/* You can easily add more sections here */}
+                  
+        <section>
+          <About />
+        </section>
       </main>
     </div>
   );
