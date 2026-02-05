@@ -3,7 +3,7 @@ import darkArrow from "../assets/dark-arrow.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-12 lg:px-24 xl:px-40 text-center text-white">
+    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 sm:px-12 lg:px-24 xl:px-40 text-center text-white">
       
       {/* Background image */}
       <div

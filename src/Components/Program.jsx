@@ -14,7 +14,7 @@ const PROGRAM_DATA = [
 
 const Program = () => {
   return (
-    <section className="px-4 sm:px-12 lg:px-24 xl:px-40 py-14">
+    <section id="program" className="px-4 sm:px-12 lg:px-24 xl:px-40 py-14">
       <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mx-auto">
         
         {PROGRAM_DATA.map(({ id, image, icon, label }) => (
