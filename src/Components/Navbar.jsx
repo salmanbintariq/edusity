@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`px-4 sm:px-12 lg:px-24 xl:px-40 py-3 flex justify-between items-center text-white fixed w-full top-0 z-100 transition-all duration-500 ${sticky ? "bg-[#212EA0] shadow-lg" : "bg-transparent"}`}
+      className={`px-4 sm:px-12 lg:px-24 xl:px-40 py-3 flex justify-between items-center text-white fixed w-full top-0 z-100 transition-all duration-500 ${sticky ? "bg-[#212EA0] shadow-lg py-2" : "bg-transparent py-4"}`}
     >
       <img src={logo} className="w-32 sm:w-40" alt="nav-logo" />
 

@@ -1,7 +1,7 @@
 const Title = ({ subTitle, title }) => {
   return (
     // Removed mt-16; let the parent handle layout spacing
-    <div className='text-center uppercase mb-10 px-4'>
+    <div className='text-center uppercase mb-14 px-4'>
       <p className="text-blue-700 text-sm font-bold tracking-wide">
         {subTitle}
       </p>

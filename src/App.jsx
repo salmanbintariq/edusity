@@ -1,4 +1,5 @@
 import About from "./Components/About";
+import Campus from "./Components/Campus";
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import Program from "./Components/Program"
@@ -11,14 +12,19 @@ const App = () => {
       <Navbar />
       <Hero />
 
-      <main className="max-w-7xl mx-auto space-y-20 py-20">
-        <section>
+      <main className="max-w-7xl mx-auto px-4 sm:px-12 lg:px-24 xl:px-40 space-y-24 py-20">
+        <section id="program">
           <Title subTitle="OUR PROGRAM" title="What We Offer" />
           <Program />
         </section>
                   
-        <section>
+        <section id="about">
           <About />
+        </section>
+
+        <section id="gallery">
+          <Title subTitle="GALLERY" title="Campus Photos" />
+          <Campus />
         </section>
       </main>
     </div>
