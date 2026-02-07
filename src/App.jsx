@@ -3,6 +3,7 @@ import Campus from "./Components/Campus";
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import Program from "./Components/Program"
+import Testimonials from "./Components/Testimonials";
 import Title from "./Components/Title"
 
 
@@ -25,6 +26,11 @@ const App = () => {
         <section id="gallery">
           <Title subTitle="GALLERY" title="Campus Photos" />
           <Campus />
+        </section>
+
+        <section id="testimonials" className="">
+          <Title subTitle="TESTIMONIALS" title="What Student Says" />
+          <Testimonials />
         </section>
       </main>
     </div>
