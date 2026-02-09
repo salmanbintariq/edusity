@@ -87,7 +87,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#testimonial"
+              href="#testimonials"
               className="md:hover:border-b"
               onClick={() => setIsMenuOpen(false)}
             >

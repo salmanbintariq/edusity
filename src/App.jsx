@@ -1,5 +1,6 @@
 import About from "./Components/About";
 import Campus from "./Components/Campus";
+import ContactUs from "./Components/ContactUs";
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import Program from "./Components/Program"
@@ -19,11 +20,11 @@ const App = () => {
           <Program />
         </section>
                   
-        <section id="about">
+        <section id="about-us">
           <About />
         </section>
 
-        <section id="gallery">
+        <section id="campus">
           <Title subTitle="GALLERY" title="Campus Photos" />
           <Campus />
         </section>
@@ -31,6 +32,11 @@ const App = () => {
         <section id="testimonials" className="">
           <Title subTitle="TESTIMONIALS" title="What Student Says" />
           <Testimonials />
+        </section>
+
+        <section>
+          <Title subTitle="Contact us" title="Get in Touch" />
+          <ContactUs/>
         </section>
       </main>
     </div>
