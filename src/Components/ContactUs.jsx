@@ -3,8 +3,31 @@ import mail_icon from "../assets/mail-icon.png";
 import phone_icon from "../assets/phone-icon.png";
 import location_icon from "../assets/location-icon.png";
 import white_arrow from "../assets/white-arrow.png";
+import { useState } from "react";
 
 const ContactUs = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      setResult("Form Submitted Successfully!");
+      event.target.reset();
+    } else {
+      setResult("Error");
+    }
+  };
+
   return (
     <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-20 my-20 mx-auto max-w-275">
       {/* Left Column */}
@@ -37,7 +60,7 @@ const ContactUs = () => {
 
       {/* Right Column */}
       <div className="md:basis-[52%] text-[#676767]">
-        <form>
+        <form onSubmit={onSubmit} className="mb-5">
           {/* 1. Name Field */}
           <label className="block font-medium">Your name</label>
           <input
@@ -76,6 +99,7 @@ const ContactUs = () => {
             <img src={white_arrow} className="w-5" alt="submit-button" />
           </button>
         </form>
+        <span className="mt-5 text-sm">{result}</span>
       </div>
     </div>
   );
