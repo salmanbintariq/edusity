@@ -95,7 +95,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <button className="bg-white text-[#212121] px-6 py-2.5 rounded-4xl md:mr-2 cursor-pointer hover:scale-105 transition-all">
+            <button id="contact-us" className="bg-white text-[#212121] px-6 py-2.5 rounded-4xl md:mr-2 cursor-pointer hover:scale-105 transition-all">
               Contact us
             </button>
           </li>

@@ -1,6 +1,7 @@
 import About from "./Components/About";
 import Campus from "./Components/Campus";
 import ContactUs from "./Components/ContactUs";
+import Footer from "./Components/Footer";
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import Program from "./Components/Program"
@@ -34,11 +35,13 @@ const App = () => {
           <Testimonials />
         </section>
 
-        <section>
+        <section id="contact-us">
           <Title subTitle="Contact us" title="Get in Touch" />
           <ContactUs/>
         </section>
       </main>
+
+      <Footer/>
     </div>
   );
 };
