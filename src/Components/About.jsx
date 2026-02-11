@@ -1,6 +1,8 @@
 import about_img from "../assets/about.png";
 import play_icon from "../assets/play-icon.png";
-const About = () => {
+
+
+const About = ({setPlayState}) => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0">
       {/* Left Section - Image & Play Icon */}
@@ -13,6 +15,7 @@ const About = () => {
             className="w-14 md:w-16 cursor-pointer hover:scale-110 transition-transform duration-300 drop-shadow-md"
             src={play_icon}
             alt="Play Video Icon"
+            onClick={() => setPlayState(true)}
           />
         </div>
 
