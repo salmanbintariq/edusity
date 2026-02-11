@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import menuIcon from "../assets/menu-icon.png";
@@ -50,54 +51,76 @@ const Navbar = () => {
 
         <ul className="flex flex-col gap-5 md:flex md:flex-row md:items-center md:gap-7 transition-all">
           <li>
-            <a
-              href="#"
-              className="md:hover:border-b"
+            <Link
+              to="hero"
+              smooth={true}
+              offset={0}
+              duration={500}
               onClick={() => setIsMenuOpen(false)}
+              className="cursor-pointer md:hover:border-b"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#program"
-              className="md:hover:border-b"
+            <Link
+              to="program"
+              smooth={true}
+              offset={-200}
+              duration={500}
               onClick={() => setIsMenuOpen(false)}
+              className="cursor-pointer md:hover:border-b"
             >
               Program
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about-us"
-              className="md:hover:border-b"
+            <Link
+              to="about-us"
+              smooth={true}
+              offset={-150}
+              duration={500}
               onClick={() => setIsMenuOpen(false)}
+              className="cursor-pointer md:hover:border-b"
             >
               About us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#campus"
-              className="md:hover:border-b"
+            <Link
+              to="campus"
+              smooth={true}
+              offset={-150}
+              duration={500}
               onClick={() => setIsMenuOpen(false)}
+              className="cursor-pointer md:hover:border-b"
             >
               Campus
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#testimonials"
-              className="md:hover:border-b"
+            <Link
+              to="testimonials"
+              smooth={true}
+              offset={-160}
+              duration={500}
               onClick={() => setIsMenuOpen(false)}
+              className="cursor-pointer md:hover:border-b"
             >
               Testimonial
-            </a>
+            </Link>
           </li>
           <li>
-            <button id="contact-us" className="bg-white text-[#212121] px-6 py-2.5 rounded-4xl md:mr-2 cursor-pointer hover:scale-105 transition-all">
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-90}
+              duration={500}
+              onClick={() => setIsMenuOpen(false)}
+              className="bg-white text-[#212121] px-6 py-2.5 rounded-full md:mr-2 cursor-pointer hover:scale-105 transition-all inline-block text-center"
+            >
               Contact us
-            </button>
+            </Link>
           </li>
         </ul>
       </div>

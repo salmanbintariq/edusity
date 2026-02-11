@@ -35,7 +35,7 @@ const App = () => {
           <Testimonials />
         </section>
 
-        <section id="contact-us">
+        <section id="contact">
           <Title subTitle="Contact us" title="Get in Touch" />
           <ContactUs/>
         </section>

@@ -3,7 +3,7 @@ import darkArrow from "../assets/dark-arrow.png";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 sm:px-12 lg:px-24 xl:px-40 text-center text-white">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center px-4 sm:px-12 lg:px-24 xl:px-40 text-center text-white">
       
       {/* Background image */}
       <div
@@ -15,9 +15,9 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7))]" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-5">
-        <h1 className="max-w-4xl text-3xl sm:text-4xl md:text-6xl font-extrabold leading-16">
-          We Ensure better education <br /> for a better world
+      <div className="relative z-10 flex flex-col items-center gap-5 md:gap-6">
+        <h1 className="max-w-4xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight sm:leading-snug md:leading-tight">
+          We Ensure better education <br className="hidden sm:block" /> for a better world
         </h1>
 
         <p className="max-w-2xl text-sm sm:text-lg text-white/90 leading-6">
