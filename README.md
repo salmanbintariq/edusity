@@ -20,13 +20,13 @@
 ## 📸 Screenshots
 
 ### 🏠 Hero Section
-![Hero Section](./screenshots/hero.png)
+![Hero Section](/public/screenshots/home.png)
 
 ### 📚 Programs Overview
-![Programs Section](./screenshots/program.png)
+![Programs Section](/public/screenshots/program.png)
 
 ### 🎯 Campus Life
-![Campus Section](./screenshots/campus.png)
+![Campus Section](/public/screenshots/campus.png)
 
 ---
 
@@ -180,33 +180,6 @@ const handleSubmit = async (e) => {
 };
 ```
 
-### Tailwind CSS Customization
-
-Customize your design in `tailwind.config.js`:
-
-```js
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        primary: '#your-color',
-        secondary: '#your-color',
-      },
-      fontFamily: {
-        sans: ['Your Font', 'sans-serif'],
-      },
-    },
-  },
-  plugins: [],
-}
-```
-
----
-
 ## 🚢 Deployment
 
 This project is deployed on **GitHub Pages**.
@@ -332,7 +305,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - 📧 Email: [salmantariq8018@gmail.com](mailto:salmantariq8018@gmail.com)
 - 💼 LinkedIn: [muhammad-salman-182171230](https://www.linkedin.com/in/muhammad-salman-182171230)
 - 🐙 GitHub: [@salmanbintariq](https://github.com/salmanbintariq)
-- 🌐 Portfolio: [Agency4AI](https://salmanbintariq.github.io/agency4ai/)
 
 ---
 
